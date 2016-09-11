@@ -1,0 +1,18 @@
+//default elements
+android {
+    productFlavors {
+        "nativescriptshimmer" {
+            dimension "nativescriptshimmer"
+        }
+    }
+}
+
+dependencies {
+    def supportVer = "22.2.0";
+
+    if(project.hasProperty("supportVersion")) {
+      supportVer = supportVersion
+    }
+
+	 compile "com.facebook.shimmer:shimmer:0.1.0@aar"
+}

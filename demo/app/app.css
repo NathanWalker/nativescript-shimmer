@@ -1,0 +1,17 @@
+﻿@import '~/css/core.light.css'; 
+
+ActionBar,
+ActionItem {
+  background-color: #000;
+  color:#fff;
+}
+
+.black-bg {
+  background-color:#000;
+}
+
+.main {
+  color:#777;
+  text-align: center;
+  font-size:60;
+}
