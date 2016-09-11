@@ -13,9 +13,9 @@ Uses the following native plugins:
 
 ### Usage
 
-```
-// main-page.xml
+* `main-page.xml`:
 
+```XML
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" 
   xmlns:sh="nativescript-shimmer" 
   loaded="pageLoaded">
@@ -26,9 +26,11 @@ Uses the following native plugins:
     <Button text="Toggle" tap="{{toggleShimmer}}" />
   </StackLayout>
 </Page>
+```
 
-// main-page.ts
+* `main-page.ts`:
 
+```Javascript
 import {EventData, Observable} from "data/observable";
 import {Page} from "ui/page";
 
