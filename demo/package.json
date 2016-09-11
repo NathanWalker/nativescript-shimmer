@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "nativescript-shimmer": "file:..",
-    "nativescript-theme-core": "0.0.5",
+    "nativescript-theme-core": "^0.0.5",
     "tns-core-modules": "^2.2.1"
   },
   "devDependencies": {
