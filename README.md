@@ -58,4 +58,4 @@ class ShimmerDemo extends Observable {
 
 ### LICENSE
 
-MIT
+BSD

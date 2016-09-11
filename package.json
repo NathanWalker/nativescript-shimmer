@@ -1,6 +1,6 @@
 {
   "name": "nativescript-shimmer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Facebook shimmer effect for your NativeScript app - iOS and Android.",
   "main": "shimmer.js",
   "typings": "index.d.ts",
@@ -31,7 +31,7 @@
     "url": "https://github.com/NathanWalker/nativescript-shimmer/issues"
   },
   "license": {
-    "type": "MIT",
+    "type": "BSD",
     "url": "https://github.com/NathanWalker/nativescript-shimmer/blob/master/LICENSE"
   },
   "homepage": "https://github.com/NathanWalker/nativescript-shimmer",
