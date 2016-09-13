@@ -2,34 +2,16 @@ import {Observable} from "data/observable";
 import {Page} from 'ui/page';
 
 export class ShimmerDemo extends Observable {
-  private _enableTxt: string;
-  private _shimmer: any;
+  public enableTxt = 'Stop';
+  private _enabled: boolean = true;
 
   constructor(page: Page) {
     super();
-
-    this._shimmer = page.getViewById('shimmer');
-    this.enableTxt = 'Stop';
   }
 
-  get enableTxt(): string {
-    return this._enableTxt;
-  }
-  
-  set enableTxt(value: string) {
-    if (this._enableTxt !== value) {
-      this._enableTxt = value;
-      this.notifyPropertyChange('enableTxt', value)
-    }
-  }
-
-  public enable() {
-    if (this._enableTxt == 'Start') {
-      this.enableTxt = 'Stop';
-      this._shimmer.enabled = true;
-    } else {
-      this.enableTxt = 'Start';
-      this._shimmer.enabled = false;
-    }
+  public toggle() {
+    this._enabled = !this._enabled;
+    this.set('enabled', this._enabled);
+    this.set('enableTxt', this._enabled ? 'Stop' : 'Start');
   }
 }

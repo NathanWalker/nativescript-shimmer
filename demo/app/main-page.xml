@@ -5,13 +5,13 @@
     <ActionBar title="Facebook Effect">
       <ActionBar.actionItems>
         <ActionItem text="{{enableTxt}}" 
-          tap="{{enable}}"
+          tap="{{toggle}}"
           ios.position="right" />
       </ActionBar.actionItems>
     </ActionBar>
   </Page.actionBar>
   <StackLayout class="black-bg p-y-20">
-    <sh:Shimmer id="shimmer">
+    <sh:Shimmer id="shimmer" enabled="{{ enabled }}">
       <Label text="Shimmer" class="h1 main" />     
     </sh:Shimmer>
   </StackLayout>
