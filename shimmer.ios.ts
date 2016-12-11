@@ -31,7 +31,9 @@ export class Shimmer extends ContentView {
   }
   
   public onLoaded() {
-    this._ios.contentView = this.content.ios;
+    if (this.content) {
+      this._ios.contentView = this.content.ios;
+    }
     this._ios.shimmering = this._enabled;
   }
 }
