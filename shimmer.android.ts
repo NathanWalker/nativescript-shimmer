@@ -30,7 +30,7 @@ export class Shimmer extends ContentView {
     }
   }
 
-  public _createUI() {
+  public createNativeView() {
     this._android = new com.facebook.shimmer.ShimmerFrameLayout(this._context);
 
     if (!this._androidViewId) {
@@ -39,5 +39,7 @@ export class Shimmer extends ContentView {
     this._android.setId(this._androidViewId);
 
     if (this._enabled) this.enabled = true;
+
+    return this._android;
   }
 }
