@@ -2,7 +2,10 @@
 *.js.map
 *.log
 *.d.ts
-!index.d.ts
+src/*.d.ts
+!src/index.d.ts
+!src/references.d.ts
+!src/scripts/*.js
 !scripts/*.js
 demo/app/*.js
 demo/app/css
@@ -10,4 +13,11 @@ demo/hooks
 demo/lib
 demo/platforms
 demo/node_modules
+demo-ng/app/*.js
+demo-ng/app/css
+demo-ng/hooks
+demo-ng/lib
+demo-ng/platforms
+demo-ng/node_modules
 node_modules
+package-lock.json

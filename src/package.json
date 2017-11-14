@@ -1,0 +1,60 @@
+{
+  "name": "nativescript-shimmer",
+  "version": "2.0.0",
+  "description": "Facebook shimmer effect for your NativeScript app - iOS and Android.",
+  "main": "shimmer.js",
+  "typings": "index.d.ts",
+  "nativescript": {
+    "platforms": {
+      "android": "3.0.0",
+      "ios": "3.0.0"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NathanWalker/nativescript-shimmer.git"
+  },
+  "keywords": [
+    "NativeScript",
+    "JavaScript",
+    "Android",
+    "iOS",
+    "Shimmer",
+    "Facebook",
+    "Effects"
+  ],
+  "author": {
+    "name": "Nathan Walker",
+    "email": "walkerrunpdx@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/NathanWalker/nativescript-shimmer/issues"
+  },
+  "license": {
+    "type": "BSD",
+    "url": "https://github.com/NathanWalker/nativescript-shimmer/blob/master/LICENSE"
+  },
+  "homepage": "https://github.com/NathanWalker/nativescript-shimmer",
+  "readmeFilename": "README.md",
+  "scripts": {
+    "tsc": "tsc -skipLibCheck",
+    "build": "npm i && tsc",
+    "plugin.link": "npm link && cd ../demo && npm link nativescript-shimmer && cd ../src",
+    "plugin.tscwatch": "npm run tsc -- -w",
+    "demo.build": "npm i && npm run tsc",
+    "demo.ios": "npm run demo.build && cd ../demo && tns run ios --emulator --syncAllFiles",
+    "demo-ng.ios": "npm run demo.build && cd ../demo-ng && tns run ios --emulator --syncAllFiles",
+    "demo.android": "npm run demo.build && cd ../demo && tns run android --emulator  --syncAllFiles",
+    "demo-ng.android": "npm run demo.build && cd ../demo-ng && tns run android --emulator  --syncAllFiles",
+    "demo.reset": "rimraf demo/hooks demo/node_modules demo/platforms demo-ng/hooks demo-ng/node_modules demo-ng/platforms",
+    "plugin.prepare": "npm run tsc && cd ../demo && tns plugin remove nativescript-shimmer && tns plugin add ../src",
+    "clean": "cd ../demo && rimraf hooks node_modules platforms && cd ../src && rimraf node_modules && npm run plugin.link"
+  },
+  "devDependencies": {
+    "tns-core-modules": "~3.3.0",
+    "tns-platform-declarations": "~3.3.0",
+    "typescript": "~2.5.3",
+    "prompt": "^1.0.0",
+    "rimraf": "^2.5.0"
+  }
+}
