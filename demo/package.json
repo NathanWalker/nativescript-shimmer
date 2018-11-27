@@ -2,16 +2,16 @@
   "nativescript": {
     "id": "org.nativescript.demo",
     "tns-ios": {
-      "version": "3.3.0"
+      "version": "5.1.0-2018-11-26-121836-02"
     },
     "tns-android": {
-      "version": "3.3.0"
+      "version": "5.0.0-2018-11-26-163644-01"
     }
   },
   "dependencies": {
     "nativescript-shimmer": "../src",
     "nativescript-theme-core": "^1.0.2",
-    "tns-core-modules": "~3.3.0"
+    "tns-core-modules": "next"
   },
   "devDependencies": {
     "babel-traverse": "6.7.6",
@@ -19,7 +19,7 @@
     "babylon": "6.7.0",
     "filewalker": "0.1.2",
     "lazy": "1.0.11",
-    "nativescript-dev-typescript": "~0.5.0",
-    "typescript": "2.5.3"
+    "nativescript-dev-typescript": "~0.7.6",
+    "typescript": "~3.1.6"
   }
 }

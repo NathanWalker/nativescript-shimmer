@@ -1,7 +1,12 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" 
   xmlns:sh="nativescript-shimmer" 
   loaded="pageLoaded">
-  <Page.actionBar>
+  <ActionBar title="Facebook Effect" class="action-bar">
+    <ActionItem text="{{enableTxt}}" 
+          tap="{{toggle}}"
+          ios.position="right" />
+	</ActionBar>
+  <!-- <Page.actionBar>
     <ActionBar title="Facebook Effect">
       <ActionBar.actionItems>
         <ActionItem text="{{enableTxt}}" 
@@ -9,7 +14,7 @@
           ios.position="right" />
       </ActionBar.actionItems>
     </ActionBar>
-  </Page.actionBar>
+  </Page.actionBar> -->
   <StackLayout class="black-bg p-y-20">
     <sh:Shimmer id="shimmer" enabled="{{ enabled }}">
       <Label text="Shimmer" class="h1 main" />     

@@ -20,7 +20,8 @@
             ]
         }
     },
-    "include": [
+    "files": [
+        "references.d.ts",
         "shimmer.android.ts",
         "shimmer.ios.ts"
     ],
