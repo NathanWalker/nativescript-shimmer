@@ -1,12 +1,3 @@
-//default elements
-android {
-    productFlavors {
-        "nativescriptshimmer" {
-            dimension "nativescriptshimmer"
-        }
-    }
-}
-
 dependencies {
     def supportVer = "22.2.0";
 
